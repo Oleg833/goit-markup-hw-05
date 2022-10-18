@@ -70,9 +70,17 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
   padding: 32px 0; 
+}
+.link-current-page::after {
+  display: block;
+  content: ' ';
+  width: 100%;
+  height: 4px;
+  left: 0%;
+  bottom: -2px;
+  background-color: var(--hover-and-focus-color);
+  border-radius: 2px;
 }
 .site-nav-link {
   color: var(--primary-text-color);
