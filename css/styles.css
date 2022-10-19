@@ -72,11 +72,15 @@ img {
   letter-spacing: 0.02em;
   padding: 32px 0; 
 }
+.site-nav-link{
+  position: relative;
+}
 .auth-nav-link {
   display: flex;
   align-items: center;
 }
 .link-current-page::after {
+  position: absolute;
   display: block;
   content: ' ';
   width: 100%;
@@ -92,6 +96,7 @@ img {
 .auth-nav-link {
   color: var(--accent-text-color);
 }
+
 .site-nav-item+.site-nav-item,
 .auth-nav-item+.auth-nav-item {
   margin-left: 50px;
