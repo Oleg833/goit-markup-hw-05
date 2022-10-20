@@ -239,6 +239,24 @@ img {
   line-height: 1.17;
   text-align: center;
 }
+.work-item {
+  position: relative;
+}
+.work-label {
+  display: block;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+  text-align: center;
+  bottom: 0;
+  padding: 27px 0;
+}
 .comand-card {
   background-color: #F5F4FA;
 }
