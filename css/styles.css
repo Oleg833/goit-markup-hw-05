@@ -322,7 +322,8 @@ img {
   gap: 30px;
 }
 .clients-card-item {
-  width: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 150px) / 6);
+  /* width: calc((100% - 150px) / 6); */
   height: 92px; 
 }
 .clients-link {
@@ -388,7 +389,8 @@ img {
   gap: 30px;
 }
 .card-portfolio-item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
+  /* width: calc((100% - 60px) / 3); */
 }
 .card-portfolio-link:hover,
   .card-portfolio-link:focus {
