@@ -36,14 +36,24 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.main-nav,
- .site-nav-list,
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+.site-nav-list,
  .auth-nav-list {
   display: flex;
   align-items: center;
+  gap: 50px;
 }
+/* .site-nav-item+.site-nav-item,
+.auth-nav-item+.auth-nav-item {
+  margin-left: 50px;
+} */
 .link {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .logo {
   display: block;
@@ -59,7 +69,6 @@ img {
 }
 .main-nav .logo {
   padding: 24px 0 25px 0;
-  margin-right: 93px;
 }
 .main-nav .logo-span {
   padding: 24px 0 25px 0;
@@ -97,16 +106,13 @@ img {
 .auth-nav-link {
   color: var(--accent-text-color);
 }
-.site-nav-item+.site-nav-item,
-.auth-nav-item+.auth-nav-item {
-  margin-left: 50px;
-}
 .contact-icon-svg {
   margin-right: 10px; 
 }
 .icon-contact-link {
   fill: var(--accent-text-color);
-  transition: fill 250ms cubic-bezier(.4, 0, .2, 1);
+  transition: color 250ms cubic-bezier(.4, 0, .2, 1),
+   fill 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .icon-contact-link:hover,
  .icon-contact-link:focus{
@@ -170,7 +176,7 @@ img {
 }
 .btn-portfolio {
   color: var(--primary-text-color);
-  background-color: #F5F4FA;
+  background-color: var(--button-no-active);
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
@@ -306,7 +312,6 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-size: 100%;
   border-radius: 50%;
   fill: var(--social-links-color);
   transition: background-color 250ms cubic-bezier(.4, 0, .2, 1), fill 250ms cubic-bezier(.4, 0, .2, 1);
@@ -395,11 +400,13 @@ img {
   flex-basis: calc((100% - 60px) / 3);
   /* width: calc((100% - 60px) / 3); */
 }
+.card-portfolio-link {
+  transition: box-shadow 250ms cubic-bezier(.4, 0, .2, 1);  
+}
 .card-portfolio-link:hover,
   .card-portfolio-link:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  opacity: 1;
 }
 .card-portfolio-img-box {
   position: relative;
@@ -407,7 +414,6 @@ img {
 }
 .card-portfolio-link:hover
 .card-portfolio-img-text-hover {
-  opacity: 1;
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
 }
@@ -415,10 +421,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  padding-top: 63px;
-  padding-right: 24px;
-  padding-bottom: 63px;
-  padding-left: 24px;
+  padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
