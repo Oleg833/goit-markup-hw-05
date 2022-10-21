@@ -44,7 +44,6 @@ img {
 }
 .link {
   text-decoration: none;
-  transition: color 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .logo {
   display: block;
@@ -98,7 +97,6 @@ img {
 .auth-nav-link {
   color: var(--accent-text-color);
 }
-
 .site-nav-item+.site-nav-item,
 .auth-nav-item+.auth-nav-item {
   margin-left: 50px;
@@ -212,10 +210,10 @@ img {
 }
 .features-icons {
   display: flex;
-  height: 120px;
-  background-color: var(--button-no-active);
   justify-content: center;
   align-items: center;
+  height: 120px;
+  background-color: var(--button-no-active);
   margin-bottom: 30px;
 }
 .features-title {
@@ -249,8 +247,8 @@ img {
   position: relative;
 }
 .work-label {
-  display: block;
   position: absolute;
+  bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -259,9 +257,9 @@ img {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
-  text-align: center;
-  bottom: 0;
-  padding: 27px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .comand-card {
   background-color: #F5F4FA;
@@ -304,19 +302,19 @@ img {
 }
 .icon-comand {
   display: flex;
-  width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  border-radius: 50%;
   fill: var(--social-links-color);
+  transition: background-color 250ms cubic-bezier(.4, 0, .2, 1), fill 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .icon-comand:hover,
 .icon-comand:focus {
   background-color: var(--hover-and-focus-color);
-  background-size: 100%;
-  border-radius: 50%;
   fill: var(--primary-white-color);
-  transition: background-color 250ms cubic-bezier(.4, 0, .2, 1), fill 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .clients-heading {
   margin-bottom: 50px;
@@ -332,12 +330,13 @@ img {
 }
 .clients-link {
   display: flex;
-  width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--social-links-color);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(.4, 0, .2, 1), fill 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .clients-link {
   fill: var(--social-links-color);
@@ -345,8 +344,7 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--hover-and-focus-color);
-  border-color: var(--hover-and-focus-color);
-  transition: border-color 250ms cubic-bezier(.4, 0, .2, 1), fill 250ms cubic-bezier(.4, 0, .2, 1);
+  border-color: var(--hover-and-focus-color);  
 }
 .footer {
   background-color: var(--accent-bgd-color);
