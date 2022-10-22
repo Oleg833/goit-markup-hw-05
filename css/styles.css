@@ -417,6 +417,11 @@ img {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
 }
+.card-portfolio-link:focus
+.card-portfolio-img-text-hover {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
+}
 .card-portfolio-img-text-hover {
   position: absolute;
   top: 0;
